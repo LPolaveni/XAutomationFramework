@@ -1,12 +1,12 @@
 package com.automation;
 
-import com.x.webAutomation.controllers.SetUpTest;
+import com.x.webAutomation.controllers.DriverClass;
 import com.x.webAutomation.objectReposority.StatusCodesPageLocators;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class StatusCodeTest extends SetUpTest {
+public class StatusCodeTest extends DriverClass {
 
     @Test
     public void verifyStatusCode200() throws Exception {

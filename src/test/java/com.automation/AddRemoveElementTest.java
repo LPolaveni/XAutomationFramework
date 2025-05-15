@@ -1,13 +1,13 @@
 package com.automation;
 
-import com.x.webAutomation.controllers.SetUpTest;
+import com.x.webAutomation.controllers.DriverClass;
 import com.x.webAutomation.objectReposority.AddRemoveElementLocators;
 import com.x.webAutomation.objectReposority.HomePageLocators;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AddRemoveElementTest extends SetUpTest {
+public class AddRemoveElementTest extends DriverClass {
 
     @Test
     public void addRemoveElementTest() throws Exception {
