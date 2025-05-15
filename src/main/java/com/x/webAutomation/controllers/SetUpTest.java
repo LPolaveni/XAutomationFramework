@@ -33,9 +33,6 @@ public class SetUpTest {
 	protected static String failureimagespath;
 	protected String reasonPastDue;
 
-	
-	
-
 	@BeforeMethod(alwaysRun = true)
 	public void startOfTest(ITestContext context, Method method) throws Exception {
 		log.info("***************** START TEST *****************");
@@ -70,7 +67,7 @@ public class SetUpTest {
 
 	public String getURL(String env, String strFlow) throws FileNotFoundException, IOException {
 		Properties envProps = new Properties();
-		if (env.equalsIgnoreCase("url")) {
+		if (env.equalsIgnoreCase("Prod")) {
 			envProps.load(new FileInputStream(
 					System.getProperty("user.dir") + "/src/main/resources/webConfig/env.properties"));
 			strUrlVal = envProps.getProperty("url");

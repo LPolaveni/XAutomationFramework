@@ -1,23 +1,17 @@
 package com.x.webAutomation.controllers;
 
-import com.x.webAutomation.objectReposority.HomePageLocators;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterTest;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.time.Duration;
 import java.util.Properties;
 
 public class DriverClass {
-
-    public HomePageLocators homePageLocators;
-    public WebDriver driver;
 
     public static WebDriver createInstance() throws IOException {
         WebDriver driver = null;
@@ -52,7 +46,7 @@ public class DriverClass {
         return driver;
     }
 
-    public WebDriver launchApplication() throws IOException {
+    /*public WebDriver launchApplication() throws IOException {
        driver = createInstance();
         Properties envProps = new Properties();
         envProps.load(new FileInputStream(
@@ -62,10 +56,5 @@ public class DriverClass {
        driver.manage().window().maximize();
        homePageLocators = new HomePageLocators(driver);
        return driver;
-    }
-
-    @AfterTest
-    public void tearDown(){
-        driver.close();
-    }
+    }*/
 }

@@ -1,55 +1,41 @@
 package com.automation;
 
+import com.x.webAutomation.common.Log4jUtil;
 import com.x.webAutomation.controllers.DriverClass;
-import com.x.webAutomation.objectReposority.StatusCodesPageLocators;
-import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+import com.x.webAutomation.scenarios.StatusCodeScenarios;
+import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
 
 public class StatusCodeTest extends DriverClass {
 
+    Logger log = Log4jUtil.loadLogger(StatusCodeTest.class);
+    StatusCodeScenarios statusCodeScenarios= new StatusCodeScenarios();
+
+    public StatusCodeTest() throws IOException {
+    }
+
     @Test
     public void verifyStatusCode200() throws Exception {
-        WebDriver driver = launchApplication();
-        homePageLocators.gotToStatusCodesPage();
-        StatusCodesPageLocators statusCodesPageLocators = new StatusCodesPageLocators(driver);
-        statusCodesPageLocators.clickOnStatusCode200();
-        String actual = statusCodesPageLocators.getStatusCode();
-        Assert.assertTrue(actual.contains("200"));
-
+        statusCodeScenarios.statusCode200();
     }
 
     @Test
     public void verifyStatusCode301() throws Exception {
-        WebDriver driver = launchApplication();
-        homePageLocators.gotToStatusCodesPage();
-        StatusCodesPageLocators statusCodesPageLocators = new StatusCodesPageLocators(driver);
-        statusCodesPageLocators.clickOnStatusCode301();
-        String actual = statusCodesPageLocators.getStatusCode();
-        Assert.assertTrue(actual.contains("301"));
+        statusCodeScenarios.statusCode301();
 
     }
 
     @Test
     public void verifyStatusCode404() throws Exception {
-        WebDriver driver = launchApplication();
-        homePageLocators.gotToStatusCodesPage();
-        StatusCodesPageLocators statusCodesPageLocators = new StatusCodesPageLocators(driver);
-        statusCodesPageLocators.clickOnStatusCode404();
-        String actual = statusCodesPageLocators.getStatusCode();
-        Assert.assertTrue(actual.contains("404"));
+       statusCodeScenarios.statusCode404();
 
     }
 
     @Test
     public void verifyStatusCode500() throws Exception {
-        WebDriver driver = launchApplication();
-        homePageLocators.gotToStatusCodesPage();
-        StatusCodesPageLocators statusCodesPageLocators = new StatusCodesPageLocators(driver);
-        statusCodesPageLocators.clickOnStatusCode500();
-        String actual = statusCodesPageLocators.getStatusCode();
-        Assert.assertTrue(actual.contains("500"));
-
+        statusCodeScenarios.statusCode500();
     }
 
 }

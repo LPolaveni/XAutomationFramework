@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a99dd8ca-9144-4b37-9642-91e700288fbd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/controllers/DriverClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/controllers/DriverClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/controllers/SetUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/controllers/SetUpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/objectReposority/AddRemoveElementLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/objectReposority/AddRemoveElementLocators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/objectReposority/HomePageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/objectReposority/HomePageLocators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/objectReposority/StatusCodesPageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/objectReposority/StatusCodesPageLocators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/utils/CommonUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/utils/CommonUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.automation/AddRemoveElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.automation/AddRemoveElementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.automation/StandAloneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.automation/StandAloneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.automation/StatusCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.automation/StatusCodeTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/main" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="2x4b6dLWly7486bHuBI5UYS3xik" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/java/controllers/SetUpTest" />
+    <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/src" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\polav\Desktop\AutomatioFrameworks" />
+      <recent name="C:\Users\polav\Desktop\AutomatioFrameworks\src" />
+      <recent name="C:\Users\polav\Desktop\AutomatioFrameworks\src\main\resources\webConfig" />
+      <recent name="C:\Users\polav\Desktop\AutomatioFrameworks\src\main\java\resources\webConfig\commonConfig" />
+      <recent name="C:\Users\polav\Desktop\AutomatioFrameworks\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\polav\Desktop\AutomatioFrameworks\src\main" />
+      <recent name="C:\Users\polav\Desktop\AutomatioFrameworks\src\main\java\resources\webConfig" />
+      <recent name="C:\Users\polav\Desktop\AutomatioFrameworks\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.x.webAutomation.common" />
+      <recent name="com.x.webAutomation.controllers" />
+      <recent name="utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.StandAloneTest.welcomeTextTest">
+    <configuration name="C:/Users/polav/Desktop/AutomatioFrameworks/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomatioFrameworks" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StandAloneTest.welcomeTextTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomatioFrameworks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.StandAloneTest" />
+      <option name="METHOD_NAME" value="welcomeTextTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatusCodeTest.verifyStatusCode200" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomatioFrameworks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.StatusCodeTest" />
+      <option name="METHOD_NAME" value="verifyStatusCode200" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatusCodeTest.verifyStatusCode301" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomatioFrameworks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.StatusCodeTest" />
+      <option name="METHOD_NAME" value="verifyStatusCode301" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatusCodeTest.verifyStatusCode500" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomatioFrameworks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.StatusCodeTest" />
+      <option name="METHOD_NAME" value="verifyStatusCode500" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.StandAloneTest.welcomeTextTest" />
+        <item itemvalue="TestNG.C:/Users/polav/Desktop/AutomatioFrameworks/testng.xml" />
+        <item itemvalue="TestNG.StatusCodeTest.verifyStatusCode301" />
+        <item itemvalue="TestNG.StatusCodeTest.verifyStatusCode500" />
+        <item itemvalue="TestNG.StatusCodeTest.verifyStatusCode200" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a99dd8ca-9144-4b37-9642-91e700288fbd" name="Default Changelist" comment="" />
+      <created>1747200126388</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747200126388</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/'frameworkSetUp'" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/x/webAutomation/controllers/DriverManager.java</url>
+          <line>8</line>
+          <properties class="com.x.webAutomation.controllers.DriverManager" method="getDriver">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com.automation/StandAloneTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

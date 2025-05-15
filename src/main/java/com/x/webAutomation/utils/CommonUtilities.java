@@ -1,5 +1,9 @@
 package com.x.webAutomation.utils;
 
+import com.x.webAutomation.common.Log4jUtil;
+import com.x.webAutomation.controllers.DriverManager;
+import com.x.webAutomation.controllers.SetUpTest;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -9,15 +13,13 @@ import java.time.Duration;
 
 import static org.testng.Assert.assertTrue;
 
-public class CommonUtilities {
+public class CommonUtilities extends SetUpTest {
 
-    WebDriver driver;
-    public CommonUtilities(WebDriver driver) {
-        this.driver = driver;
-    }
+    protected WebDriver driverInstance = DriverManager.getDriver();
+    Logger log = Log4jUtil.loadLogger(CommonUtilities.class);
 
     public WebDriverWait driverWait() {
-        WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(3));
+        WebDriverWait explicitWait = new WebDriverWait(driverInstance, Duration.ofSeconds(3));
         return explicitWait;
     }
 
@@ -27,12 +29,12 @@ public class CommonUtilities {
             driverWait().until(ExpectedConditions.elementToBeClickable(locator));
             if (locator.isDisplayed()) {
                 locator.click();
-                //log.info("Clicked on element: " + locator);
+                log.info("Clicked on element: " + locator);
                 blnVal = true;
             }
 
         } catch (Exception e) {
-            //log.error("Unable to click on element: " + locator);
+            log.error("Unable to click on element: " + locator);
             //extLogger.log(Status.ERROR, "Unable to click on element: " + locator);
             //addScreenshotToStep("");
             e.printStackTrace();
@@ -48,11 +50,11 @@ public class CommonUtilities {
             driverWait().until(ExpectedConditions.elementToBeClickable(locator));
             if (locator.isDisplayed()) {
                 strRetVal = locator.getText();
-                //log.info("Successfully captured text from " + message + ": " + strRetVal);
+                log.info("Successfully captured text from " + message + ": " + strRetVal);
             }
 
         } catch (Exception e) {
-            //log.error("Unable to captured the text :" + locator);
+            log.error("Unable to captured the text :" + locator);
             //extLogger.log(Status.ERROR, "Unable to captured the text :" + locator);
             e.printStackTrace();
             assertTrue(false);
