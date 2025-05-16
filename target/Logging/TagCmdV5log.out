@@ -1,0 +1,79 @@
+2025-05-16 00:32:48 INFO  [main] common.Listeners  (Listeners.java:106)  - Thread id = 1
+2025-05-16 00:32:48 INFO  [main] common.Listeners  (Listeners.java:107)  - Hashcode of webDriver instance = 244297136
+2025-05-16 00:32:48 INFO  [main] common.Listeners  (Listeners.java:65)  - Test case failed: welcomeTextTest --- Exception : java.lang.NullPointerException
+2025-05-16 00:32:59 INFO  [main] common.Listeners  (Listeners.java:106)  - Thread id = 1
+2025-05-16 00:32:59 INFO  [main] common.Listeners  (Listeners.java:107)  - Hashcode of webDriver instance = 1871580398
+2025-05-16 00:32:59 INFO  [main] common.Listeners  (Listeners.java:65)  - Test case failed: verifyStatusCode200 --- Exception : java.lang.NullPointerException
+2025-05-16 00:33:44 INFO  [main] common.Listeners  (Listeners.java:106)  - Thread id = 1
+2025-05-16 00:33:44 INFO  [main] common.Listeners  (Listeners.java:107)  - Hashcode of webDriver instance = 1466717494
+2025-05-16 00:33:44 INFO  [main] common.Listeners  (Listeners.java:65)  - Test case failed: verifyStatusCode301 --- Exception : java.lang.NullPointerException
+2025-05-16 00:34:27 INFO  [main] common.Listeners  (Listeners.java:106)  - Thread id = 1
+2025-05-16 00:34:27 INFO  [main] common.Listeners  (Listeners.java:107)  - Hashcode of webDriver instance = 1677840544
+2025-05-16 00:34:27 INFO  [main] common.Listeners  (Listeners.java:65)  - Test case failed: verifyStatusCode404 --- Exception : java.lang.NullPointerException
+2025-05-16 00:35:00 INFO  [main] common.Listeners  (Listeners.java:106)  - Thread id = 1
+2025-05-16 00:35:00 INFO  [main] common.Listeners  (Listeners.java:107)  - Hashcode of webDriver instance = 1187748003
+2025-05-16 00:35:00 INFO  [main] common.Listeners  (Listeners.java:65)  - Test case failed: verifyStatusCode500 --- Exception : java.lang.NullPointerException
+2025-05-16 00:35:00 INFO  [main] common.Listeners  (Listeners.java:48)  - All Tests Execution Completed
+2025-05-16 00:35:00 INFO  [main] common.Listeners  (Listeners.java:35)  - Total test cases   :5
+2025-05-16 00:35:00 INFO  [main] common.Listeners  (Listeners.java:36)  - Total passed cases :0
+2025-05-16 00:35:00 INFO  [main] common.Listeners  (Listeners.java:37)  - Total failed cases :5
+2025-05-16 00:35:00 INFO  [main] common.Listeners  (Listeners.java:38)  - Total skipped cases:0
+2025-05-16 00:37:55 INFO  [main] common.Listeners  (Listeners.java:106)  - Thread id = 1
+2025-05-16 00:37:55 INFO  [main] common.Listeners  (Listeners.java:107)  - Hashcode of webDriver instance = 1417554340
+2025-05-16 00:37:55 INFO  [main] common.Listeners  (Listeners.java:65)  - Test case failed: welcomeTextTest --- Exception : java.lang.NullPointerException
+2025-05-16 00:38:03 INFO  [main] common.Listeners  (Listeners.java:106)  - Thread id = 1
+2025-05-16 00:38:03 INFO  [main] common.Listeners  (Listeners.java:107)  - Hashcode of webDriver instance = 353206468
+2025-05-16 00:38:03 INFO  [main] common.Listeners  (Listeners.java:65)  - Test case failed: verifyStatusCode200 --- Exception : java.lang.NullPointerException
+2025-05-16 00:38:03 INFO  [main] common.Listeners  (Listeners.java:48)  - All Tests Execution Completed
+2025-05-16 00:38:03 INFO  [main] common.Listeners  (Listeners.java:35)  - Total test cases   :2
+2025-05-16 00:38:03 INFO  [main] common.Listeners  (Listeners.java:36)  - Total passed cases :0
+2025-05-16 00:38:03 INFO  [main] common.Listeners  (Listeners.java:37)  - Total failed cases :2
+2025-05-16 00:38:03 INFO  [main] common.Listeners  (Listeners.java:38)  - Total skipped cases:0
+2025-05-16 00:38:52 INFO  [main] common.Listeners  (Listeners.java:106)  - Thread id = 1
+2025-05-16 00:38:52 INFO  [main] common.Listeners  (Listeners.java:107)  - Hashcode of webDriver instance = 501951555
+2025-05-16 00:38:53 INFO  [main] common.Listeners  (Listeners.java:65)  - Test case failed: welcomeTextTest --- Exception : java.lang.NullPointerException
+2025-05-16 00:39:16 INFO  [main] common.Listeners  (Listeners.java:106)  - Thread id = 1
+2025-05-16 00:39:16 INFO  [main] common.Listeners  (Listeners.java:107)  - Hashcode of webDriver instance = 1613332278
+2025-05-16 00:39:16 INFO  [main] common.Listeners  (Listeners.java:65)  - Test case failed: welcomeTextTest --- Exception : java.lang.NullPointerException
+2025-05-16 00:39:35 INFO  [main] common.Listeners  (Listeners.java:106)  - Thread id = 1
+2025-05-16 00:39:35 INFO  [main] common.Listeners  (Listeners.java:107)  - Hashcode of webDriver instance = 1244775150
+2025-05-16 00:39:35 INFO  [main] common.Listeners  (Listeners.java:65)  - Test case failed: verifyStatusCode200 --- Exception : java.lang.NullPointerException
+2025-05-16 00:39:35 INFO  [main] common.Listeners  (Listeners.java:48)  - All Tests Execution Completed
+2025-05-16 00:39:35 INFO  [main] common.Listeners  (Listeners.java:35)  - Total test cases   :2
+2025-05-16 00:39:35 INFO  [main] common.Listeners  (Listeners.java:36)  - Total passed cases :0
+2025-05-16 00:39:35 INFO  [main] common.Listeners  (Listeners.java:37)  - Total failed cases :2
+2025-05-16 00:39:35 INFO  [main] common.Listeners  (Listeners.java:38)  - Total skipped cases:0
+2025-05-16 00:40:04 INFO  [main] common.Listeners  (Listeners.java:106)  - Thread id = 1
+2025-05-16 00:40:04 INFO  [main] common.Listeners  (Listeners.java:107)  - Hashcode of webDriver instance = 417875774
+2025-05-16 00:40:04 INFO  [main] common.Listeners  (Listeners.java:65)  - Test case failed: welcomeTextTest --- Exception : java.lang.NullPointerException
+2025-05-16 19:06:24 INFO  [main] common.Listeners  (Listeners.java:46)  - All Tests Execution Completed
+2025-05-16 19:06:24 INFO  [main] common.Listeners  (Listeners.java:33)  - Total test cases   :0
+2025-05-16 19:06:24 INFO  [main] common.Listeners  (Listeners.java:34)  - Total passed cases :0
+2025-05-16 19:06:24 INFO  [main] common.Listeners  (Listeners.java:35)  - Total failed cases :0
+2025-05-16 19:06:24 INFO  [main] common.Listeners  (Listeners.java:36)  - Total skipped cases:0
+2025-05-16 19:06:51 INFO  [main] common.Listeners  (Listeners.java:46)  - All Tests Execution Completed
+2025-05-16 19:06:51 INFO  [main] common.Listeners  (Listeners.java:33)  - Total test cases   :0
+2025-05-16 19:06:51 INFO  [main] common.Listeners  (Listeners.java:34)  - Total passed cases :0
+2025-05-16 19:06:51 INFO  [main] common.Listeners  (Listeners.java:35)  - Total failed cases :0
+2025-05-16 19:06:51 INFO  [main] common.Listeners  (Listeners.java:36)  - Total skipped cases:0
+2025-05-16 19:07:28 INFO  [main] common.Listeners  (Listeners.java:48)  - All Tests Execution Completed
+2025-05-16 19:07:28 INFO  [main] common.Listeners  (Listeners.java:35)  - Total test cases   :0
+2025-05-16 19:07:28 INFO  [main] common.Listeners  (Listeners.java:36)  - Total passed cases :0
+2025-05-16 19:07:28 INFO  [main] common.Listeners  (Listeners.java:37)  - Total failed cases :0
+2025-05-16 19:07:28 INFO  [main] common.Listeners  (Listeners.java:38)  - Total skipped cases:0
+2025-05-16 19:08:49 INFO  [main] common.Listeners  (Listeners.java:100)  - Thread id = 1
+2025-05-16 19:08:49 INFO  [main] common.Listeners  (Listeners.java:101)  - Hashcode of webDriver instance = 843959601
+2025-05-16 19:08:49 INFO  [main] common.Listeners  (Listeners.java:65)  - Test case failed: verifyAddRemoveElementTest --- Exception : java.lang.NullPointerException
+2025-05-16 19:08:49 INFO  [main] common.Listeners  (Listeners.java:48)  - All Tests Execution Completed
+2025-05-16 19:08:49 INFO  [main] common.Listeners  (Listeners.java:35)  - Total test cases   :1
+2025-05-16 19:08:49 INFO  [main] common.Listeners  (Listeners.java:36)  - Total passed cases :0
+2025-05-16 19:08:49 INFO  [main] common.Listeners  (Listeners.java:37)  - Total failed cases :1
+2025-05-16 19:08:49 INFO  [main] common.Listeners  (Listeners.java:38)  - Total skipped cases:0
+2025-05-16 19:09:47 INFO  [main] common.Listeners  (Listeners.java:100)  - Thread id = 1
+2025-05-16 19:09:47 INFO  [main] common.Listeners  (Listeners.java:101)  - Hashcode of webDriver instance = 681747431
+2025-05-16 19:09:48 INFO  [main] common.Listeners  (Listeners.java:65)  - Test case failed: verifyAddRemoveElementTest --- Exception : java.lang.NullPointerException
+2025-05-16 19:10:03 INFO  [main] common.Listeners  (Listeners.java:48)  - All Tests Execution Completed
+2025-05-16 19:10:06 INFO  [main] common.Listeners  (Listeners.java:35)  - Total test cases   :1
+2025-05-16 19:10:06 INFO  [main] common.Listeners  (Listeners.java:36)  - Total passed cases :0
+2025-05-16 19:10:06 INFO  [main] common.Listeners  (Listeners.java:37)  - Total failed cases :1
+2025-05-16 19:10:06 INFO  [main] common.Listeners  (Listeners.java:38)  - Total skipped cases:0

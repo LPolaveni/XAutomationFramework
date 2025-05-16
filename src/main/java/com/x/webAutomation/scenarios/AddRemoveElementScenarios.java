@@ -11,6 +11,7 @@ public class AddRemoveElementScenarios extends SetUpTest {
     private AddRemoveElementDAO addRemoveElementDAO;
 
 
+
     public void addRemoveElementCheck() throws Exception {
         homePageDAO.goTOAddRemoveElementPage();
         addRemoveElementDAO.addNewElement();

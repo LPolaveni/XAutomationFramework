@@ -5,6 +5,7 @@ import com.x.webAutomation.scenarios.HomePageScenarios;
 import org.testng.annotations.Test;
 
 
+
 public class StandAloneTest extends DriverClass {
     HomePageScenarios homePageScenarios = new HomePageScenarios();
 
@@ -12,4 +13,4 @@ public class StandAloneTest extends DriverClass {
     public void welcomeTextTest() throws Exception {
         homePageScenarios.verifyWelcomeHomeText();
     }
-}
+}git

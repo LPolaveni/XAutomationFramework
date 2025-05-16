@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a99dd8ca-9144-4b37-9642-91e700288fbd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/controllers/DriverClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/controllers/DriverClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/common/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/common/Listeners.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/controllers/SetUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/controllers/SetUpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/objectReposority/AddRemoveElementLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/objectReposority/AddRemoveElementLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/objectReposority/HomePageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/objectReposority/HomePageLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/objectReposority/StatusCodesPageLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/objectReposority/StatusCodesPageLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/utils/CommonUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/utils/CommonUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.automation/AddRemoveElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.automation/AddRemoveElementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/scenarios/AddRemoveElementScenarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/x/webAutomation/scenarios/AddRemoveElementScenarios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com.automation/StandAloneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.automation/StandAloneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.automation/StatusCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.automation/StatusCodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Logging/TagCmdV5log.out" beforeDir="false" afterPath="$PROJECT_DIR$/target/Logging/TagCmdV5log.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/x/webAutomation/controllers/SetUpTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/x/webAutomation/controllers/SetUpTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MRoads/pep-develop@30939ac50bf" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -88,6 +87,39 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.StandAloneTest.welcomeTextTest">
+    <configuration name="AddRemoveElementTest.verifyAddRemoveElementTest" type="TestNG" nameIsGenerated="true">
+      <module name="AutomatioFrameworks" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.automation" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.AddRemoveElementTest" />
+      <option name="METHOD_NAME" value="verifyAddRemoveElementTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/polav/Desktop/AutomatioFrameworks/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomatioFrameworks" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -98,18 +130,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StandAloneTest.welcomeTextTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="StandAloneTest.welcomeTextTest" type="TestNG" nameIsGenerated="true">
       <module name="AutomatioFrameworks" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.automation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="com.automation" />
       <option name="MAIN_CLASS_NAME" value="com.automation.StandAloneTest" />
       <option name="METHOD_NAME" value="welcomeTextTest" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <envs>
+        <env name="mvn test -DsuiteXmlFile" value="testng.xml" />
+      </envs>
       <properties />
       <listeners />
       <method v="2">
@@ -170,6 +220,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG.AddRemoveElementTest.verifyAddRemoveElementTest" />
+      <item itemvalue="TestNG.C:/Users/polav/Desktop/AutomatioFrameworks/testng.xml" />
+      <item itemvalue="TestNG.StandAloneTest.welcomeTextTest" />
+      <item itemvalue="TestNG.StatusCodeTest.verifyStatusCode200" />
+      <item itemvalue="TestNG.StatusCodeTest.verifyStatusCode301" />
+      <item itemvalue="TestNG.StatusCodeTest.verifyStatusCode500" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.StandAloneTest.welcomeTextTest" />
@@ -218,20 +276,38 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/x/webAutomation/controllers/DriverManager.java</url>
-          <line>8</line>
-          <properties class="com.x.webAutomation.controllers.DriverManager" method="getDriver">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="5" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com.automation/StandAloneTest.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/x/webAutomation/scenarios/AddRemoveElementScenarios.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com.automation/AddRemoveElementTest.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com.automation/StandAloneTest.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="6" />
+          <line>13</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/x/webAutomation/dao/HomePageDAO.java</url>
+          <line>22</line>
+          <properties class="com.x.webAutomation.dao.HomePageDAO" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/AutomatioFrameworks$C__Users_polav_Desktop_AutomatioFrameworks_testng_xml.ic" NAME="$PROJECT_DIR$/testng.xml Coverage Results" MODIFIED="1747319946238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

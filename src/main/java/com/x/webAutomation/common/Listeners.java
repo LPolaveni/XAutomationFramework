@@ -90,13 +90,7 @@ public class Listeners extends JUnitReportReporter implements ISuiteListener, IT
 			driverInstance.get(SetUpTest.strUrlVal);
 			log.info("URL launched " + SetUpTest.strUrlVal);
 			log.info("Launched Browser");
-			/*SetUpTest.scenarioName = method.getTestMethod().getMethodName();
-			Reporter.getCurrentTestResult().getTestContext()
-			.setAttribute("methodName" + Thread.currentThread().hashCode(), SetUpTest.scenarioName);
-			SetUpTest.blnPortFlag = false;
-			Reporter.getCurrentTestResult().getTestContext()
-			.setAttribute("portFlag" + Thread.currentThread().hashCode(), SetUpTest.blnPortFlag);*/
-		}
+			}
 	}
 
 	@Override

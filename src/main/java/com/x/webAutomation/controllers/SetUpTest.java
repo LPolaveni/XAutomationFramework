@@ -67,14 +67,9 @@ public class SetUpTest {
 
 	public String getURL(String env, String strFlow) throws FileNotFoundException, IOException {
 		Properties envProps = new Properties();
-		if (env.equalsIgnoreCase("Prod")) {
 			envProps.load(new FileInputStream(
 					System.getProperty("user.dir") + "/src/main/resources/webConfig/env.properties"));
 			strUrlVal = envProps.getProperty("url");
-		}
-		else {
-			strUrlVal = "https://the-internet.herokuapp.com/";
-		}
 		return strUrlVal;
 	}
 
