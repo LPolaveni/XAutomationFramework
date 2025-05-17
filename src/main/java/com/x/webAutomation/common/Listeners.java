@@ -1,96 +1,78 @@
 package com.x.webAutomation.common;
 
-
-import com.x.webAutomation.controllers.DriverClass;
 import com.x.webAutomation.controllers.DriverManager;
-import com.x.webAutomation.controllers.SetUpTest;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebDriver;
 import org.testng.*;
 import org.testng.annotations.ITestAnnotation;
 import org.testng.reporters.JUnitReportReporter;
 
-import java.io.IOException;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-import java.time.Duration;
-import java.util.HashMap;
-
-
-public class Listeners extends JUnitReportReporter implements ISuiteListener, ITestListener, IInvokedMethodListener,IRetryAnalyzer, IAnnotationTransformer {
-	public int totalpassed, totaltcs, totalskipped, totalfailed;
-	Logger log = Log4jUtil.loadLogger(Listeners.class);
-	HashMap<String,String> testMap=null;
+public class Listeners extends JUnitReportReporter implements ISuiteListener, ITestListener, IInvokedMethodListener, IRetryAnalyzer, IAnnotationTransformer {
+	private static final Logger log = Log4jUtil.loadLogger(Listeners.class);
 	private int retryCounter = 0;
-	private int retryLimit = 1;
+	private final int retryLimit = 1;
+	private int totalPassed = 0, totalFailed = 0, totalSkipped = 0, totalTcs = 0;;
 
+
+	@Override
 	public void onStart(ISuite suite) {
-		totalpassed = 0;
-		totaltcs = 0;
-		totalskipped = 0;
-		totalfailed = 0;
+		totalPassed = 0;
+		totalTcs = 0;
+		totalFailed = 0;
+		totalSkipped = 0;
+		log.info("=== Test Suite Started: " + suite.getName() + " ===");
 	}
 
+	@Override
 	public void onFinish(ISuite suite) {
-		log.info("Total test cases   :" + (totalpassed + totalskipped + totalfailed));
-		log.info("Total passed cases :" + totalpassed);
-		log.info("Total failed cases :" + totalfailed);
-		log.info("Total skipped cases:" + totalskipped);
-	}
 
-	/*
-	 * For Test Listener related methods
-	 */
-	public void onStart(ITestContext test) {
+		log.info("Total test cases   :" + (totalPassed + totalSkipped + totalFailed));
+		log.info("Total Passed: " + totalPassed);
+		log.info("Total Failed: " + totalFailed);
+		log.info("Total Skipped: " + totalSkipped);
 	}
 
 	public void onFinish(ITestContext test) {
 		log.info("All Tests Execution Completed");
 	}
 
-	public synchronized void onTestStart(ITestResult test) {
+
+	@Override
+	public void onTestStart(ITestResult result) {
 		try {
-			totaltcs++;
+			totalTcs++;
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		log.info("Test Started: " + result.getName());
 	}
 
-	public synchronized void onTestSuccess(ITestResult test) {
-		totalpassed++;
+	@Override
+	public void onTestSuccess(ITestResult result) {
+		totalPassed++;
+		log.info("✅ Test Passed: " + result.getName());
 	}
 
-	public synchronized void onTestFailure(ITestResult test) {
-		log.info("Test case failed: " + test.getName() + " --- Exception : " + test.getThrowable());
-		test.getThrowable().printStackTrace();
-		totalfailed++;
+	@Override
+	public void onTestFailure(ITestResult result) {
+		totalFailed++;
+		log.info("Test case failed: " + result.getName() + " --- Exception : " + result.getThrowable());
+		result.getThrowable().printStackTrace();
+		totalFailed++;
 	}
 
-	public synchronized void onTestSkipped(ITestResult test) {
-		log.info("Listener If test case skipped:" + test.getName() + " --- Exception : " + test.getThrowable());
-		test.getThrowable().printStackTrace();
-		totalskipped++;
+	@Override
+	public void onTestSkipped(ITestResult result) {
+		log.info("Listener If test case skipped:" + result.getName() + " --- Exception : " + result.getThrowable());
+		result.getThrowable().printStackTrace();
+		totalSkipped++;
 	}
 
 	@Override
 	public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
 		if (method.isTestMethod()) {
-			WebDriver driver = null;
-			try {
-				driver = DriverClass.createInstance();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			DriverManager.setDriver(driver);
-			WebDriver driverInstance = DriverManager.getDriver();
-			driverInstance.manage().deleteAllCookies();
-			driverInstance.manage().window().maximize();
-			driverInstance.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			driverInstance.get(SetUpTest.strUrlVal);
-			log.info("URL launched " + SetUpTest.strUrlVal);
-			log.info("Launched Browser");
-			}
+			log.info("--- Before Method: " + method.getTestMethod().getMethodName() + " ---");
+		}
 	}
 
 	@Override
@@ -104,33 +86,17 @@ public class Listeners extends JUnitReportReporter implements ISuiteListener, IT
 	}
 
 	@Override
-	public synchronized String getTestName(ITestResult result) {
-		/*String customMethod = null;
-		Object[] dataSet = result.getParameters();
-		Map<Object, String> testData = new HashMap<Object, String>();
-		testData = Utils.getStringAsMap(dataSet[0].toString().replaceAll("[{}]", ""), ",", "=");
-		String testCaseKey = testData.get("TestCaseID") + "-" + result.getMethod().getMethodName();
-		customMethod = testCaseKey *//* + " : " + testNameKey *//*;
-		log.info("in get TestName and custom name is " + customMethod);
-		return customMethod;*/
-		return null;
-	}
-
-	@Override
-	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@SuppressWarnings("rawtypes")
-	public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
-		annotation.setRetryAnalyzer(Listeners.class);
-	}
-
-
-	@Override
-	public boolean retry(ITestResult iTestResult) {
+	public boolean retry(ITestResult result) {
+		if (result.getStatus() == ITestResult.FAILURE && retryCounter < retryLimit) {
+			retryCounter++;
+			log.warn("🔁 Retrying test: " + result.getName() + " (" + retryCounter + "/" + retryLimit + ")");
+			return true;
+		}
 		return false;
 	}
-}
 
+	@Override
+	public void transform(ITestAnnotation annotation, Class testClass, java.lang.reflect.Constructor testConstructor, java.lang.reflect.Method testMethod) {
+		annotation.setRetryAnalyzer(this.getClass());
+	}
+}

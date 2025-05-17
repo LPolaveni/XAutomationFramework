@@ -15,8 +15,12 @@ import static org.testng.Assert.assertTrue;
 
 public class CommonUtilities extends SetUpTest {
 
-    protected WebDriver driverInstance = DriverManager.getDriver();
+    protected WebDriver driverInstance;
     Logger log = Log4jUtil.loadLogger(CommonUtilities.class);
+
+    public CommonUtilities() {
+        this.driverInstance = DriverManager.getDriver();
+    }
 
     public WebDriverWait driverWait() {
         WebDriverWait explicitWait = new WebDriverWait(driverInstance, Duration.ofSeconds(3));
@@ -35,8 +39,6 @@ public class CommonUtilities extends SetUpTest {
 
         } catch (Exception e) {
             log.error("Unable to click on element: " + locator);
-            //extLogger.log(Status.ERROR, "Unable to click on element: " + locator);
-            //addScreenshotToStep("");
             e.printStackTrace();
             assertTrue(blnVal);
             throw (e);
@@ -55,7 +57,6 @@ public class CommonUtilities extends SetUpTest {
 
         } catch (Exception e) {
             log.error("Unable to captured the text :" + locator);
-            //extLogger.log(Status.ERROR, "Unable to captured the text :" + locator);
             e.printStackTrace();
             assertTrue(false);
             throw (e);

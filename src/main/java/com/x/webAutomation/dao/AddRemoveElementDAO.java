@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
-public class AddRemoveElementDAO extends SetUpTest {
+public class AddRemoveElementDAO extends SetUpTest{
 
     private WebDriver driverInstance;
     private AddRemoveElementLocators addRemoveElementLocators;
@@ -25,9 +25,14 @@ public class AddRemoveElementDAO extends SetUpTest {
         this.driverInstance = DriverManager.getDriver();
         this.addRemoveElementLocators = PageFactory.initElements(this.driverInstance, AddRemoveElementLocators.class);
         explicitWait = new WebDriverWait(driverInstance, Duration.ofSeconds(3));
+        this.commonUtilities = new CommonUtilities();
         useData = new Properties();
         useData.load(new FileInputStream(
                 System.getProperty("user.dir") + "/src/main/resources/webConfig/utils.properties"));
+    }
+
+    public void goTOAddRemoveElementPage() throws Exception {
+        commonUtilities.click(addRemoveElementLocators.addRemoveElements);
     }
 
     public void addNewElement() throws Exception {

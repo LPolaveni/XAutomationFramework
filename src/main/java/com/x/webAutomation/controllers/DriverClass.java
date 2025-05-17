@@ -32,8 +32,6 @@ public class DriverClass {
         if (strBrowserVal.toLowerCase().contains("chrome")) {
 
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
-
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-infobars"); // Corrected argument
             options.addArguments("--disable-backgrounding-occluded-windows");
@@ -46,15 +44,4 @@ public class DriverClass {
         return driver;
     }
 
-    /*public WebDriver launchApplication() throws IOException {
-       driver = createInstance();
-        Properties envProps = new Properties();
-        envProps.load(new FileInputStream(
-                System.getProperty("user.dir") + "/src/main/resources/webConfig/env.properties"));
-       driver.get(envProps.getProperty("url"));
-       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(9));
-       driver.manage().window().maximize();
-       homePageLocators = new HomePageLocators(driver);
-       return driver;
-    }*/
 }

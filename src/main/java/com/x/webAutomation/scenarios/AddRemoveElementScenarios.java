@@ -1,19 +1,22 @@
 package com.x.webAutomation.scenarios;
 
-import com.x.webAutomation.controllers.SetUpTest;
 import com.x.webAutomation.dao.AddRemoveElementDAO;
-import com.x.webAutomation.dao.HomePageDAO;
 import org.testng.Assert;
 
-public class AddRemoveElementScenarios extends SetUpTest {
+public class AddRemoveElementScenarios {
 
-    private HomePageDAO homePageDAO;
     private AddRemoveElementDAO addRemoveElementDAO;
 
 
+    public synchronized AddRemoveElementDAO getSTProps() throws Exception {
+        this.addRemoveElementDAO = new AddRemoveElementDAO();
+        return addRemoveElementDAO;
+    }
+
 
     public void addRemoveElementCheck() throws Exception {
-        homePageDAO.goTOAddRemoveElementPage();
+        this.addRemoveElementDAO = getSTProps();
+        addRemoveElementDAO.goTOAddRemoveElementPage();
         addRemoveElementDAO.addNewElement();
         String actual = addRemoveElementDAO.getElementAdded();
         Assert.assertEquals(actual, "Delete");

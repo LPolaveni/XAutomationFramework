@@ -20,4 +20,6 @@ public class StatusCodesPageLocators{
     @FindBy(xpath = "//p")
     public WebElement statusCodeReturn;
 
+    @FindBy(xpath = "//a[contains(text(),'Status Codes')]")
+    public WebElement statusCodes;
 }

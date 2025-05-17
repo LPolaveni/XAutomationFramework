@@ -12,6 +12,6 @@ public class AddRemoveElementLocators {
     public WebElement deleteElementButton;
 
 
-
-
+    @FindBy(xpath = "//a[contains(text(),'Add/Remove Elements')]")
+    public WebElement addRemoveElements;
 }

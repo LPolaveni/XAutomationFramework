@@ -25,6 +25,7 @@ public class StatusCodeDAO extends SetUpTest {
         this.driverInstance = DriverManager.getDriver();
         this.statusCodesPageLocators = PageFactory.initElements(this.driverInstance, StatusCodesPageLocators.class);
         explicitWait = new WebDriverWait(driverInstance, Duration.ofSeconds(3));
+        this.commonUtilities = new CommonUtilities();
         useData = new Properties();
         useData.load(new FileInputStream(
                 System.getProperty("user.dir") + "/src/main/resources/webConfig/utils.properties"));
@@ -36,6 +37,9 @@ public class StatusCodeDAO extends SetUpTest {
         log.info("clicked on status 200");
     }
 
+    public void goToStatusCodesPage() throws Exception {
+        commonUtilities.click(statusCodesPageLocators.statusCodes);
+    }
 
     public void clickOnStatusCode301() throws Exception {
         commonUtilities.click(statusCodesPageLocators.statusCode301);

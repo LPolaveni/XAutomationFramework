@@ -2,7 +2,7 @@ package com.x.webAutomation.controllers;
 
 import org.openqa.selenium.WebDriver;
 
-public class DriverManager {
+public class DriverManager{
 
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 
