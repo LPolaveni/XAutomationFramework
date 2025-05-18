@@ -1,60 +1,97 @@
+
 # 🧪 Selenium Test Automation Framework
 
-This is a modular, data-driven automation testing framework built with Java, Selenium WebDriver, TestNG, Log4j, and ExtentReports.
+A modular, data-driven automation framework built with **Java**, **Selenium WebDriver**, **TestNG**, **Log4j**, and **ExtentReports**. Supports rich HTML reporting and is extensible for CI/CD integration.
 
 ---
 
-## 📁 Project Structure
+## 📁 Structure Overview
+
+```
 
 src/
-├── main/
-│ ├── java/
-│ │ ├── com.x.webAutomation.controllers # Driver setup, Test base
-│ │ ├── com.x.webAutomation.pages # Page Object classes
-│ │ ├── com.x.webAutomation.utils # Common utilities (logging, waits, screenshots)
-│ │ ├── com.x.webAutomation.reports # ExtentReport configuration
-│ │ ├── com.x.webAutomation.common # Listener, logger, etc.
-├── test/
-│ ├── java/
-│ │ ├── com.automation # Test classes using TestNG
-│
-resources/
-├── webConfig/
-│ ├── env.properties # Base URL and environment configs
-├── commonConfig/
-│ ├── log4j.properties # Log4j logging configuration
+├── main/java/com/x/webAutomation/
+│   ├── controllers     # WebDriver setup, test base
+│   ├── pages           # Page Object Models
+│   ├── utils           # Utilities (logs, waits, screenshots)
+│   ├── reports         # ExtentReport configuration
+│   ├── common          # Listeners, loggers
+├── test/java/com/automation/  # TestNG test classes
 
+resources/
+├── webConfig/env.properties      # Test config (URL, browser)
+├── commonConfig/log4j.properties # Logging configuration
+
+````
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Prerequisites
+### ✅ Prerequisites
+
 - Java 17+
 - Maven 3.6+
-- IntelliJ IDEA / Eclipse
-- Chrome browser installed
+- IntelliJ / Eclipse
+- Google Chrome
 
-### 2. Setup
-1. Clone the repository
-2. Run `mvn clean install`
-3. Update `env.properties` with your test environment URL
+### ⚙️ Setup
+
+```bash
+git clone <repo-url>
+cd AutomatioFrameworks
+mvn clean install
+````
+
+Edit `env.properties` to set your test environment and browser.
 
 ---
 
 ## 🧪 Running Tests
 
-### From IntelliJ:
-- Right-click on `testng.xml` → Run
+* **From IDE**: Right-click `testng.xml` → Run
+* **From CLI**:
 
+  ```bash
+  mvn test -DsuiteXmlFile=testng.xml
+  ```
 
- **To-Do**
- 
-Add Extent Report
-Add Jenkins integration
+---
 
-Dockerize tests for CI
+## 📊 Reporting
 
-Add support for other browsers
+* Uses **ExtentReports** (dark theme, system info, custom logo)
+* Report auto-opens in Chrome after execution (Windows)
+* Location:
 
-Implement test data from Excel/JSON
+  ```
+  test-output/ExtentReports/<DATE>/DEFAULT/AutomationTestReport.html
+  ```
+
+---
+
+## 📌 Roadmap
+
+* ✅ ExtentReports integration with theme & system info
+* ⏳ Jenkins CI/CD integration
+* ⏳ Docker-based execution
+* ⏳ Multi-browser support (Firefox, Edge)
+* ⏳ Data-driven testing with Excel/JSON
+
+---
+
+## 🤝 Contributions
+
+Open to improvements! Fork, raise issues, or submit PRs.
+
+```
+
+---
+
+### ✅ Summary of Improvements
+
+- Clear headings for each section
+- Efficient project structure description
+- Short and powerful roadmap
+- Highlights features without over-explaining
+
