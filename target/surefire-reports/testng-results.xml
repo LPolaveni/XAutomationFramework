@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-17T18:46:29 AEST" name="Command line suite" finished-at="2025-05-17T18:47:07 AEST" duration-ms="37764">
+    <groups>
+    </groups>
+    <test started-at="2025-05-17T18:46:29 AEST" name="Command line test" finished-at="2025-05-17T18:47:07 AEST" duration-ms="37764">
+      <class name="com.automation.AddRemoveElementTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.AddRemoveElementTest@2667f029]" started-at="2025-05-17T18:46:29 AEST" name="setUp" finished-at="2025-05-17T18:46:37 AEST" duration-ms="8168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAddRemoveElementTest()[pri:0, instance:com.automation.AddRemoveElementTest@2667f029]" started-at="2025-05-17T18:46:37 AEST" name="verifyAddRemoveElementTest" finished-at="2025-05-17T18:46:38 AEST" duration-ms="800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddRemoveElementTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.AddRemoveElementTest@2667f029]" started-at="2025-05-17T18:46:38 AEST" name="tearDown" finished-at="2025-05-17T18:46:38 AEST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automation.AddRemoveElementTest -->
+      <class name="com.automation.StandAloneTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.StandAloneTest@61df66b6]" started-at="2025-05-17T18:46:38 AEST" name="setUp" finished-at="2025-05-17T18:46:44 AEST" duration-ms="5612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="welcomeTextTest()[pri:0, instance:com.automation.StandAloneTest@61df66b6]" started-at="2025-05-17T18:46:44 AEST" name="welcomeTextTest" finished-at="2025-05-17T18:46:44 AEST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- welcomeTextTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.StandAloneTest@61df66b6]" started-at="2025-05-17T18:46:44 AEST" name="tearDown" finished-at="2025-05-17T18:46:44 AEST" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automation.StandAloneTest -->
+      <class name="com.automation.StatusCodeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.StatusCodeTest@16ec5519]" started-at="2025-05-17T18:46:44 AEST" name="setUp" finished-at="2025-05-17T18:46:49 AEST" duration-ms="4693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyStatusCode200()[pri:0, instance:com.automation.StatusCodeTest@16ec5519]" started-at="2025-05-17T18:46:49 AEST" name="verifyStatusCode200" finished-at="2025-05-17T18:46:50 AEST" duration-ms="890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatusCode200 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.StatusCodeTest@16ec5519]" started-at="2025-05-17T18:46:50 AEST" name="tearDown" finished-at="2025-05-17T18:46:50 AEST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.StatusCodeTest@16ec5519]" started-at="2025-05-17T18:46:50 AEST" name="setUp" finished-at="2025-05-17T18:46:54 AEST" duration-ms="4568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyStatusCode301()[pri:0, instance:com.automation.StatusCodeTest@16ec5519]" started-at="2025-05-17T18:46:54 AEST" name="verifyStatusCode301" finished-at="2025-05-17T18:46:55 AEST" duration-ms="858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatusCode301 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.StatusCodeTest@16ec5519]" started-at="2025-05-17T18:46:55 AEST" name="tearDown" finished-at="2025-05-17T18:46:55 AEST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.StatusCodeTest@16ec5519]" started-at="2025-05-17T18:46:55 AEST" name="setUp" finished-at="2025-05-17T18:47:00 AEST" duration-ms="4502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyStatusCode404()[pri:0, instance:com.automation.StatusCodeTest@16ec5519]" started-at="2025-05-17T18:47:00 AEST" name="verifyStatusCode404" finished-at="2025-05-17T18:47:01 AEST" duration-ms="859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatusCode404 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.StatusCodeTest@16ec5519]" started-at="2025-05-17T18:47:01 AEST" name="tearDown" finished-at="2025-05-17T18:47:01 AEST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.StatusCodeTest@16ec5519]" started-at="2025-05-17T18:47:01 AEST" name="setUp" finished-at="2025-05-17T18:47:06 AEST" duration-ms="4554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyStatusCode500()[pri:0, instance:com.automation.StatusCodeTest@16ec5519]" started-at="2025-05-17T18:47:06 AEST" name="verifyStatusCode500" finished-at="2025-05-17T18:47:06 AEST" duration-ms="917" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.x.webAutomation.scenarios.StatusCodeScenarios.statusCode500(StatusCodeScenarios.java:46)
+at com.automation.StatusCodeTest.verifyStatusCode500(StatusCodeTest.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatusCode500 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.StatusCodeTest@16ec5519]" started-at="2025-05-17T18:47:06 AEST" name="tearDown" finished-at="2025-05-17T18:47:07 AEST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automation.StatusCodeTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

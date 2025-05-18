@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 38.343 sec <<< FAILURE!
+verifyStatusCode500(com.automation.StatusCodeTest)  Time elapsed: 0.917 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.x.webAutomation.scenarios.StatusCodeScenarios.statusCode500(StatusCodeScenarios.java:46)
+	at com.automation.StatusCodeTest.verifyStatusCode500(StatusCodeTest.java:33)
+
