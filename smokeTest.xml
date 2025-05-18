@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+    <listeners>
+        <listener class-name="com.x.webAutomation.common.Listeners"/>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="C:/Users/polav/Desktop/AutomatioFrameworks">
+        <classes>
+            <class name="com.automation.StatusCodeTest">
+                <methods>
+                    <include name="verifyStatusCode200"/>
+                    <include name="verifyStatusCode301"/>
+                    <include name="verifyStatusCode404"/>
+                    <include name="verifyStatusCode500"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

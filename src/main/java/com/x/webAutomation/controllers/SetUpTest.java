@@ -3,9 +3,8 @@ package com.x.webAutomation.controllers;
 
 import com.x.webAutomation.common.Log4jUtil;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 
 import java.io.FileInputStream;
@@ -15,33 +14,57 @@ import java.util.Properties;
 @Listeners(com.x.webAutomation.common.Listeners.class)
 public class SetUpTest {
 	protected static Logger log = Log4jUtil.loadLogger(SetUpTest.class);
-	protected WebDriver driver;
-	protected String baseUrl;
 
-	@BeforeMethod
+	protected static String strEnv;
+	protected static Properties props;
+	public static String scenarioName;
+	protected static String path;
+	protected static String UTILS_FILE_PATH;
+	protected static String reportPath;
+	protected static String successimagespath;
+	protected static String failureimagespath;
+	protected String reasonPastDue;
+	public static boolean blnPortFlag;
+
+	@BeforeTest(alwaysRun = true)
 	public void setUp() throws IOException {
-
-		// Create and set driver
-		driver = DriverClass.createInstance();
-		DriverManager.setDriver(driver);
-
-		// Load URL from env.properties
-		Properties props = new Properties();
-		props.load(new FileInputStream(System.getProperty("user.dir") + "/src/main/resources/webConfig/env.properties"));
-		baseUrl = props.getProperty("url");
-
-		// Configure browser
-		driver.manage().deleteAllCookies();
-		driver.manage().window().maximize();
-		driver.get(baseUrl);
+		log.info("***************** START TEST *****************");
+		setPath();
 	}
 
-	@AfterMethod
+	@AfterTest(alwaysRun = true)
 	public void tearDown() {
-		if (DriverManager.getDriver() != null) {
-			DriverManager.getDriver().quit();
-			DriverManager.removeDriver();
+		log.info("***************** END TEST *****************");
+	}
+
+
+	private void setPath() {
+		{
+			props = new Properties();
+			path = System.getProperty("user.dir");
+			try {
+				strEnv = getEnv();
+				UTILS_FILE_PATH = path + "/src/main/resources/webConfig/utils.properties";
+				props.load(new FileInputStream(UTILS_FILE_PATH));
+				reportPath = props.getProperty("reportPath");
+				successimagespath = path + props.getProperty("successimagespath");
+				failureimagespath = path + props.getProperty("failureimagespath");
+				reasonPastDue = props.getProperty("reasonPastDue");
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
+	}
+
+	private String getEnv() throws Exception {
+		String env = null;
+		if (env == null) {
+			env = props.getProperty("defaultenv");
+			log.info("Default Environment: " + props.getProperty("defaultenv"));
+		} else {
+			log.info("Environment: " + env);
+		}
+		return env;
 	}
 }
 

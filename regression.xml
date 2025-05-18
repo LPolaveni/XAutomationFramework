@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression">
-    <listeners>
-        <listener class-name="com.x.webAutomation.common.Listeners"/>
-    </listeners>
-
+<suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/polav/Desktop/AutomatioFrameworks">
         <classes>
             <class name="com.automation.AddRemoveElementTest">

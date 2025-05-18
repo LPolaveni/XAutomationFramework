@@ -1,5 +1,7 @@
 package com.x.webAutomation.utils;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.x.webAutomation.common.Log4jUtil;
 import com.x.webAutomation.controllers.DriverManager;
 import com.x.webAutomation.controllers.SetUpTest;
@@ -8,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 
 import java.time.Duration;
 
@@ -15,11 +18,15 @@ import static org.testng.Assert.assertTrue;
 
 public class CommonUtilities extends SetUpTest {
 
-    protected WebDriver driverInstance;
+    protected WebDriver driverInstance = DriverManager.getDriver();
     Logger log = Log4jUtil.loadLogger(CommonUtilities.class);
+    private String scenario;
+    private ExtentTest extLogger;
 
-    public CommonUtilities() {
-        this.driverInstance = DriverManager.getDriver();
+    public CommonUtilities(String scenario) {
+        this.scenario = scenario;
+        this.extLogger = (ExtentTest) Reporter.getCurrentTestResult().getTestContext()
+                .getAttribute("extLogger" + Thread.currentThread().hashCode());
     }
 
     public WebDriverWait driverWait() {
@@ -39,6 +46,7 @@ public class CommonUtilities extends SetUpTest {
 
         } catch (Exception e) {
             log.error("Unable to click on element: " + locator);
+            extLogger.log(Status.FAIL, "Unable to click on element: " + locator);
             e.printStackTrace();
             assertTrue(blnVal);
             throw (e);
@@ -57,6 +65,7 @@ public class CommonUtilities extends SetUpTest {
 
         } catch (Exception e) {
             log.error("Unable to captured the text :" + locator);
+            extLogger.log(Status.FAIL, "Unable to captured the text :" + locator);
             e.printStackTrace();
             assertTrue(false);
             throw (e);
